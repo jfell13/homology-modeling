@@ -1,0 +1,10 @@
+cat *.fasta >> All.fas
+muscle -in All.fas -out $1.family_fasta
+rm All.fas
+python /share/siegellab/tcoulther/bin/Trimming.py
+rm *_aligned.fasta
+cat *.fasta >> All.fas
+muscle -in All.fas -out $1.family_fasta
+python /share/siegellab/fell/homology-modeling/HM_0_Prep.py -f $1
+mv *.fasta_orig data/ 
+rm All.fas 
