@@ -1,13 +1,13 @@
 This is a file to address questions/issues as well as to list off what to code for our script.
 
 1. How to fecth for pdbs
-something
+Tim: I use clean_pdb from Rosetta
 2. Which alignement tool.
-
+Tim: I use muscle
 Promals OR Muscle?
 
 3. Sequence trim
-
+Tim: I trim end of overhang. Minimum overhang?
 4. Threaded PDBs
 
 
@@ -18,7 +18,7 @@ Promals OR Muscle?
 
 
 7. Include GDT into xml?
-
+Tim: I've incorporated GDT against threaded models into mine
 
 8. Analysis? separate script?
 
