@@ -1,7 +1,7 @@
 This is a file to address questions/issues as well as to list off what to code for our script.
 
 1. How to fecth for pdbs
-
+something
 2. Which alignement tool.
 
 3. Sequence trim
