@@ -4,6 +4,8 @@ This is a file to address questions/issues as well as to list off what to code f
 something
 2. Which alignement tool.
 
+Promals OR Muscle?
+
 3. Sequence trim
 
 4. Threaded PDBs
