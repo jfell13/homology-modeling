@@ -1,0 +1,27 @@
+This is a file to address questions/issues as well as to list off what to code for our script.
+
+1. How to fecth for pdbs
+
+2. Which alignement tool.
+
+3. Sequence trim
+
+4. Threaded PDBs
+
+
+5 Robetta?
+
+
+6. Two ways to do Cat. constraints: Catalytic Geometric (CG, Alph-Alph, Alph-Beta, etc.; aka Steve's or SB) and/or 6 DOF
+
+
+7. Include GDT into xml?
+
+
+8. Analysis? separate script?
+
+
+9. Meant to work on enzyme families OR just a single target at a time?
+
+
+10. Other?
