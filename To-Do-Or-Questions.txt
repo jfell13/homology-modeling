@@ -1,15 +1,20 @@
 This is a file to address questions/issues as well as to list off what to code for our script.
 
 1. How to fecth for pdbs
-something
+We have the database in /share/siegellab/software/wilson/all_pdbs/all_pdbs/
+
+Now do we need to update this database? Or is what we have enought?
+
 2. Which alignement tool.
 
 Promals OR Muscle?
+They are very similar but Muscle doesn't give grishin alignment and we have to run the extra function to get it there. Looks like promals is the better option. Also promals give us a family alignment for us to use in the regular constraints file. Not too sure how Robetta works tho
 
 3. Sequence trim
-
+We can make this an option for if we want to trim. just python script.py -trim.... That should be easy.
+ 
 4. Threaded PDBs
-
+We can do this already 
 
 5 Robetta?
 
@@ -22,8 +27,10 @@ Promals OR Muscle?
 
 8. Analysis? separate script?
 
+Yeah us 3 have a generic one that we can pull down that people can just run off jupyter notebook in their working directory when looking at their .sc files
 
 9. Meant to work on enzyme families OR just a single target at a time?
-
+Not sure what the biggest difference moving to families is. 
 
 10. Other?
+We doing python 2 or 3? 
