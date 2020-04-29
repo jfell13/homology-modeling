@@ -7,7 +7,7 @@ We have the database in /share/siegellab/software/wilson/all_pdbs/all_pdbs/
 Now do we need to update this database? Or is what we have enough? Is there a reason to have this on the cluster vs using clean PDB.. 
 
 Tim: I use clean_pdb from Rosetta
->>>>>>> 4ef7dc00dbd842b817db85d6c6c6ff8d57c1c4
+Jason: I think the clean_pdb.py script is best since it pulls from the latest database.
 
 2. Which alignement tool.
 
@@ -16,35 +16,44 @@ Promals OR Muscle?
 
 They are very similar but Muscle doesn't give grishin alignment and we have to run the extra function to get it there. Looks like promals is the better option. Also promals give us a family alignment for us to use in the regular constraints file. Not too sure how Robetta works tho
 
+Jason: I have written Python functions to make grishin alignments. This is rather easy once the bio module is implemented.
+
 3. Sequence trim
 
 We can make this an option for if we want to trim. just python script.py -trim.... That should be easy.
  
 Tim: I trim end of overhang. Minimum overhang?
 - here are you doing N term? 
-
->>>>>>> 4ef7dc00dbd842b817db85d6c6c6ff8d57c1c4b1
+Jason: I think have the trim option would be a good option to include, however we should have the script spit out some output
+file so the user knows what was trimmed.
 
 4. Threaded PDBs
 
 We can do this already 
+Jason: Yup! I have a script that runs this on the headnode (`sh blahhhhhhhh`); This takes minimal time.
 
 5 Robetta?
 What files do we need for this? 
+Jason: Aligned sequences and unthreaded template pdbs I think? Minimal input. I will look into getting latest vs of Robetta.
 
 6. Two ways to do Cat. constraints: Catalytic Geometric (CG, Alph-Alph, Alph-Beta, etc.; aka Steve's or SB) and/or 6 DOF
-
+Jason: perhaps have options for each?
 
 7. Include GDT into xml?
 Tim: I've incorporated GDT against threaded models into mine
+Jason: sounds good, I think we should keep this in the xmls
 
 8. Analysis? separate script?
 
 Yeah us 3 have a generic one that we can pull down that people can just run off jupyter notebook in their working directory when looking at their .sc files
+Jason: Yeah, perhaps we should re-write a notebook specifically for this new output.
 
 9. Meant to work on enzyme families OR just a single target at a time?
-Not sure what the biggest difference moving to families is. 
+Not sure what the biggest difference moving to families is.
+Jason: A family would have multiple targets that use the same set of templates, where as multiple single targets would each have multiple templates.
 
 10. Other?
-Sorry for the formatting I didn't pull before I did my comments
-We doing python 2 or 3? 
+Sorry for the formatting I didn't pull before I did my comments < LOLOLOLOLOLOLOLOLOLOL
+We doing python 2 or 3? < PYTHON 3 4EVAAAAAAAAA
+
+>Jason: but seriously, we should only write in Python3. Python2 is no longer being improved.
